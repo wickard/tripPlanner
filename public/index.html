@@ -4,11 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="./bundle.js"></script>
+  <script defer src="./bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="./style.css">
   <title>Trip Planner</title>
 </head>
 <body>
-  <div id="map"></div>
+  <header>
+      <div class="logo">
+        Trip Planner
+      </div>
+    </header>
+  <div id="map">
+  </div>
+  <div id="toolbar">
+    <div id="selector">
+      <a href='#'><div class="vert">
+        Destinations
+      </div> </a>
+      <form action="">
+        <div class="innerform">
+            Hotels:
+            <select name="Hotels" id="1">
+              <option value="Best Western">Best Western</option>
+              <option value="Hilton">Hilton</option>
+              <option value="Motel 6">Motel 6</option>
+              <option value="Thomas' Place">Thomas' Place</option>
+              <option value="Josh's BnB">Josh's BnB</option>
+            </select>
+            <button>Add</button>
+        </div>
+        <div class="innerform">
+        Activities:
+        <select name="Activities" id="2">
+          <option value="Lincoln Park Zoo">Lincoln Park Zoo</option>
+          <option value="Bowling">Bowling</option>
+          <option value="Hamilton">Hamilton</option>
+          <option value="Helicopter Tours">Helicopter Tours</option>
+          <option value="Merch Mart Gym">The Gym</option>
+        </select>
+        <button>Add</button>
+        </div>
+        <div class="innerform">
+        Restaurants:
+        <select name="Restaurants" id="3">
+          <option value="Taco Joint">Taco Joint</option>
+          <option value="McDonalds">McDonalds</option>
+          <option value="Potbelly">Potbelly's</option>
+          <option value="Halsteds">Halsteds</option>
+          <option value="KFC">KFC</option>
+        </select>
+        <button>Add</button>
+        </div>
+      </form>
+    </div>
+    <div id="itinerary">
+        <a href='#'>
+        <div class="vert">
+            Itinerary
+          </div>
+          </a>
+          <div class="inneriten">
+          <h4>My Hotel</h4>
+          <ul>
+            <li>Hilton</li>
+          </ul>
+          <h4>My Restaurants</h4>
+          <ul>
+            <li>Taco Joint</li>
+          </ul>
+          <h4>My Activities</h4>
+          <ul>
+            <li>KFC</li>
+          </ul>
+          </div>
+    </div>
+  </div>
 </body>
 </html>

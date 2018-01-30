@@ -2,8 +2,136 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color: #C1B5AD;
+}
+
+#map {
+  height: 100vh;
+  width: 100vw;
+}
+
+#toolbar {
+  position: fixed;
+  top: 100px;
+  right:0;
+  display: flex;
+  flex-direction: column;
+}
+
+#selector {
+  background: lightgray;
+  width: 300px;
+  height: 300px;
+  margin: .5vw;
+  flex: 1;
+  transform: translateX(302px);
+  transition: 1s;
+}
+
+#itinerary {
+  background: lightgray;
+  width: 300px;
+  height: 300px;
+  margin: .5vw;
+  flex: 1;
+  transform: translateX(302px);
+  transition: 1s;
+}
+.marker{
+  height: 39px;
+  width: 32px;
+}
+
+.vert{
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background: rgba(37, 37, 37, 0.8);
+  border-radius: 0px 0 15px 15px;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+}
+
+#itinerary.active{
+  transform: translateX(3px);
+}
+
+#selector.active{
+  transform: translateX(3px);
+}
+
+#toolbar a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  margin: 0 4em;
+  padding: 10px;
+  width: calc(100vw - 8em);
+  color: #fff;
+  background-color: rgba(37, 37, 37, 0.8);
+  border-radius: 0 0 1em 1em;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+header nav {
+  display: flex;
+}
+
+/* .nav-item {
+  text-align: right;
+  height: 1.5em;
+  margin: 0 1.5em 0 0;
+}
+
+.nav-item a {
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  transition: color 1s, background-color 0.5s;
+}
+.nav-item a:hover {
+  color: #202b47;
+  background-color: #fff;
+  box-shadow: #d3d3d3;
+} */
+
+.flex {
+  display: flex;
+}
+
+.logo{
+  font-size: 20px;
+}
+
+
+.innerform{
+  display: flex;
+  font-size: 23px;
+  align-content: center;
+  margin: 1.5em 0;
+}
+
+.innerform select{
+  flex: 2;
+  width: 180px;
+  height: 30px;
+}
+
+.innerform text{
+  flex: 1;
+}
+
+.inneriten{
+margin-top: -2em;
 }
